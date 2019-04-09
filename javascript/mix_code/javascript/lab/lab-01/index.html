@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <script>
+       //Simple calculator with four operations made by Jahanzaib Malik. 
+        function render() {
+            
+            var takeInput1 = parseInt(fromMain.txtInput1.value);    
+            var takeInput2 = parseInt(fromMain.txtInput2.value);    
+            var takeInput3 = fromMain.txtInput3.value;    
+
+            function addition(a, b) {
+                return a + b;
+            }
+            function subtraction(a, b) {
+                return a - b;
+            }
+            function multiplication(a, b) {
+                return a * b;
+            }
+            function divide(a, b) {
+                return a / b;
+            }
+            
+            if (takeInput3 === "+") {
+                
+                alert(addition(takeInput1, takeInput2));
+            }
+            else if (takeInput3 === "-") {
+                
+                alert(subtraction(takeInput1, takeInput2));
+            }
+            else if (takeInput3 === "*") {
+                
+                alert(multiplication(takeInput1, takeInput2));
+            }
+            else if (takeInput3 === "/") {
+                
+                alert(divide(takeInput1, takeInput2));
+            }
+         }
+    </script>
+</head>
+<body>
+    <form name="fromMain">
+        <label for="">First number: </label><br>
+        <input type="text" name="txtInput1"><br><br>
+        
+        <label for="">Second number: </label><br>
+        <input type="text" name="txtInput2"><br><br><br>
+        
+        <label for="">Operator: </label><br>
+        <input type="text" name="txtInput3"><br><br><br>
+        
+        <input type="submit" value="Submit" onclick="render()">
+    </form>
+</body>
+</html>
+
+
+<!--
+    var name;
+    name = "Jahanzaib Malik";
+    var number = 1768;
+    alert("My name is: " + name + "\nThe number is: " + number);
+-->

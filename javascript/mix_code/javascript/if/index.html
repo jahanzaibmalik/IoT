@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greetNum(num1, num2) {
+        //     if (num1 > num2) {
+        //         alert("The greater number of " + num1 + " and " + num2 + " is " + num1 + ".");
+        //     }
+        //     else {
+        //         alert("The greater number of " + num1 + " and " + num2 + " is " + num2 + ".");
+                
+        //     }
+        // }     
+
+        // greetNum(2, 4);
+        // greetNum(4, 3);
+
+
+        function greetNum(num1, num2) {
+            if (num1 > num2) {
+                return num1;
+            }
+            else {
+                return num2;
+            }
+        }
+        
+        var num1 = Number(prompt("Please enter a number."));
+        var num2 = Number(prompt("Please enter another number."));
+        
+
+        var greetNum = greetNum(num1, num2);
+        alert("The greater number of " + num1 + " and " + num2 + " is " + greetNum + ".");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // for (var i = 0; i <= 5; i++) {
+        //     alert("Hello Friends Chai piloo " + i);
+        // }
+
+        
+        // var students = ["faheem", "ibad", "waqas", "imran", "hassan"];
+        // for (var i = 0; i < students.length; i++) {
+        //     console.log(students[i]);
+        // }
+        
+
+        // var students = ["faheem", "ibad", "waqas", "imran", "hassan"];
+        // var studentsLocation = ["GHD", "BUFFERZONE", "steel", "shah faisal", "defence"];
+        // for (var i = 0; i < students.length; i++) {
+        //     console.log("The name is " + students[i] + " and location is " + studentsLocation[i]);
+        // }
+
+
+        // var numberOfStudents = prompt("Enter the number of students.");
+        // var students = [];
+        // for (var i = 0; i < numberOfStudents; i++) {
+        //     students[i] = prompt("Enter the name of student # " + (i + 1));
+        // }
+        // for (var i = 0; i < students.length; i++) {
+        //     console.log("The name of student # " + (i + 1) + " " + students[i]);
+        // }
+
+        //Use push instead of student[i].
+        // var numberOfStudents = prompt("Enter the number of students.");
+        // var students = [];
+        // for (var i = 0; i < numberOfStudents; i++) {
+        //     students.push(prompt("Enter the name of student # " + (i + 1)));
+        // }
+        // for (var i = 0; i < students.length; i++) {
+        //     console.log("The name of student # " + (i + 1) + " " + students[i]);
+        // }
+
+        
+        // var about = ["Name", "Contact", "Email", "Location"];
+        // var information = [];
+
+        // for (var i = 0; i < about.length; i++) {
+        //     information.push((prompt("Enter your " + about[i]))); 
+        // }
+        // console.log("Student Information");
+        // for (var i = 0; i < information.length; i++) {
+        //     console.log("Student " + about[i] + " " + information[i]);
+        // }
+
+
+        var numberOfStudents = Number(prompt("Enter number of students"));
+        
+        var about = ["Name", "Contact", "Email", "Location"];
+        var information = [];
+
+        for (var i = 0; i < numberOfStudents; i++) {
+            information.push([]);
+            for (var j = 0; j < about.length; j++) {
+                information[i].push((prompt("Student # " + (i + 1) + " " + about[j]))); 
+            }
+        }
+
+        console.log("Students Information");
+
+        for (var i = 0; i < information.length; i++) {
+            console.log("\nStudent # " + (i + 1) + " information.");    
+            for (j = 0; j < about.length; j++) {
+                
+                console.log("Student " + about[j] + ": " + information[i][j]);
+
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

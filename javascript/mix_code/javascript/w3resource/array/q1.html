@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function is_array(input) {
+        //    var check = Array.isArray(input);
+        //    return check; 
+        // }
+        
+        // var input = [2, 5, 6];
+        // var is_array = is_array(input)
+
+        // if (is_array === true) {
+        //     alert("The input is array.");
+        // }
+        // else {
+        //     alert("Not Array.");
+        // }
+
+
+        var is_array = function(input) {
+            if (toString.call(input) === "[object Array]") {
+                return true;
+            }
+            return false;
+        }
+
+        console.log(is_array(2));
+        
+    </script>
+</body>
+</html>

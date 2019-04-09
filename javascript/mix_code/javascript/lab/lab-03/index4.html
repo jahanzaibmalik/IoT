@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function sayHello(input) {
+            var input = input;
+        
+            var languages = ["arabic", "english", "spanish", "urdu", "hindi", "french", "russian", "latin", "japanese", "chinese", "portuguese"];
+            var sayings = ["السَّلَامُ عَلَيْكُم", "Hello", "Hola", "السلام عليكم", "नमस्ते   (Namaste)", "Bonjour", "Привет   (Privet)", "Salve", "こんにちは   (Kon'nichiwa", "你好   (Ni hao)", "Olá"];
+        
+            for (var i = 0; i < languages.length; i++) {
+            
+                for (var j = 0; j < sayings.length; j++) {
+                
+                    if (input === languages[i]) {
+                        alert(sayings[i]);
+                        break;
+                    }    
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>How to say ‘Hello’ in different languages?</h1>
+    <h2>Select your favorite language.</h2>
+    <div>
+        
+        <h2>1- <a href="javascript:void(0);" onclick="sayHello('arabic')">Arabic</a></h2>
+        <h2>2- <a href="javascript:void(0);" onclick="sayHello('urdu')">Urdu</a></h2>
+        <h2>3- <a href="javascript:void(0);" onclick="sayHello('spanish')">Spanish</a></h2>
+        <h2>4- <a href="javascript:void(0);" onclick="sayHello('english')">English</a></h2>
+        <h2>5- <a href="javascript:void(0);" onclick="sayHello('hindi')">Hindi</a></h2>
+        <h2>6- <a href="javascript:void(0);" onclick="sayHello('french')">French</a></h2>
+        <h2>7- <a href="javascript:void(0);" onclick="sayHello('russian')">Russian</a></h2>
+        <h2>8- <a href="javascript:void(0);" onclick="sayHello('latin')">Latin</a></h2>
+        <h2>9- <a href="javascript:void(0);" onclick="sayHello('japanese')">Japanese</a></h2>
+        <h2>10- <a href="javascript:void(0);" onclick="sayHello('chinese')">Chinese</a></h2>
+        <h2>11- <a href="javascript:void(0);" onclick="sayHello('portuguese')">Portuguese</a></h2>
+
+    </div>
+</body>
+</html>

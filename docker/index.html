@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function render() {
+            document.getElementById("headOne").innerText= "Hello World";
+            document.getElementById("pMain").innerText="Hello World from Paragraph."
+            alert(document.getElementById("pMain2").innerText);
+        }
+        
+    </script>
+</head>
+<body onload="render()">
+    <h1 id="headOne"></h1>
+    <p id="pMain"></p>
+    <p id="pMain2">Hello Friends chai piloo</p>
+</body>
+</html>

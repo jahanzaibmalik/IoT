@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        //sir faheem's code...
+       /* var dayOfWeek = parseInt(prompt("Enter a number."));
+        if (dayOfWeek === 1) {
+            alert("Today is Mon");
+        }
+        else if (dayOfWeek === 2) {
+            alert("Today is Tue");
+        }
+        else if (dayOfWeek === 3) {
+            alert("Today is Wed");
+        }
+        else if (dayOfWeek === 4) {
+            alert("Today is Thu");
+        }
+        else if (dayOfWeek === 5) {
+            alert("Today is Fri");
+        }
+        else if (dayOfWeek === 6) {
+            alert("Today is Sat");
+        }
+        else if (dayOfWeek === 7) {
+            alert("Today is Sun");
+        }
+
+        else {
+            alert("Invalid Selection");
+        }*/
+        
+    
+        
+        //malik's code using boolean, flags, loopus interruptus, array length...
+        var dayOfWeek = Number(prompt("Enter a number."));
+
+        var days = ["", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+        var flag = false;
+       
+        for (var i = 1; i < days.length; i++) {
+           
+            if (dayOfWeek === i) {
+                alert("Today is " + days[i]);
+                flag = true;
+                break;                           
+            }
+        }
+        if (flag === false) {
+            alert("Invalid selection");
+        }
+
+    </script>
+</body>
+</html>

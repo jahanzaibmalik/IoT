@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var nic = prompt("Do you have nic? (yes or no)");
+        var admitCard = prompt("Do you have admitcard?");
+        var geometry = prompt("Do you have geometry?");
+        var haveAFriend = prompt("Do you have friend?");
+        
+        if (nic == "yes" && admitCard == "yes" && geometry == "yes") {
+            alert("Jao paper dey do.");
+        }
+        
+        else if (nic == "yes" && admitCard == "no" && geometry == "yes") {
+            alert("Jao paper dey do.");
+        }
+
+        else if (nic == "yes" && admitCard == "yes" && geometry == "no") {
+            if (haveAFriend == "yes") {
+                alert("Friend ne bacha liya jao paper dey do.")
+            }
+            else {
+                alert("Wapis ghar jao.");
+            }
+        }
+        
+        else if (nic == "no" && admitCard == "yes" && geometry == "yes") {
+            alert("Go home.");
+        }
+              
+        else {
+            alert("Utho ghar jao.");
+        }
+
+    </script>
+</body>
+</html>

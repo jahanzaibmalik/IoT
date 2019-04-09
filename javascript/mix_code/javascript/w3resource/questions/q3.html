@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var d = new Date();
+        // var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        // var month = d.getMonth();
+        // var day = d.getDate();
+        // var year = d.getFullYear();
+        // console.log("Output: " + months[month] + "-" + day + "-" + year);
+
+        var today = new Date();
+        var dd = today.getDate();
+
+        var mm = today.getMonth() + 1;
+        var yy = today.getFullYear();
+
+        if (dd < 10) {
+            dd = "0" + dd;
+        }
+        if (mm < 10) {
+            mm = "0" + mm;
+        }
+
+        console.log(mm + "-" + dd + "-" + yy);  
+        console.log(mm + "/" + dd + "/" + yy);  
+        console.log(dd + "-" + mm + "-" + yy);  
+        console.log(mm + "/" + dd + "/" + yy);  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

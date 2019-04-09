@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var cityToCheck = prompt("Enter your city name.");
+        var cleanestCities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"];
+        var matchFound = false;
+        var numElements = cleanestCities.length;
+
+        for (var i = 0; i < numElements; i++) {
+            if (cityToCheck === cleanestCities[i]) {
+                matchFound = true;
+                console.log("It's one of the cleanest city.");
+                break;
+            }
+        }
+        if (matchFound === false) {
+            console.log("Not Found");
+        }
+
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+         for (var i = 5; i < 5; i++) {   //outer
+            for (var j = 0; j <= i; j++) { //Inner
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        var arrSchool = [["Eng", "Math", "Comp"], ["Eng", "Math", "Comp"], ["Eng", "Math", "Comp"]];
+        
+        for (var i = 0; i < arrSchool.length; i++) {
+            
+            console.log("The class: " + (i + 1) + " " + "Course Are");
+            
+            for (var j = 0; j < arrSchool[i].length; j++) {
+                console.log(arrSchool[i][j]);
+            }
+        }
+
+        // var arrSchool = [];
+        // var times = []
+        // var countClass = prompt("Enter the classes ?");
+        // var countSubject;
+
+        // for (var i = 0; i < countClass; i++) {
+        //     arrSchool[i] = [];
+        //     countSubject = prompt("Enter the subject number of class " + (i + 1) + " ?");
+
+        //     for (var j = 0; j < countSubject; j++) {
+        //         arrSchool[i][j] = prompt("Enter the subject " + (j + 1) + "of Class " + (i + 1));        
+        //     }
+        // }        
+
+        // for (var i = 0; i < arrSchool.length; i++) {
+
+        //     console.log("The class: " + (i + 1) + " Course Are:");
+        //     for (var j = 0; j < arrSchool[i].length; j++) {
+        //         console.log(arrSchool[i][j]);
+        //     }
+        // }
+
+        // console.log(arrSchool);
+    </script>
+</body>
+</html>
